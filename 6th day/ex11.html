@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+	<ul>
+		<li> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod </li>
+		<li> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod </li>
+		<li> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod </li>
+		<li> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod </li>
+		<li> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod </li>
+	</ul>
+	<button class="btn">click</button>
+	<style>
+	ul{
+		border:1px solid;
+	}
+	li{
+		border:1px solid green;
+	}
+</style>
+<script src="jquery-3.3.1.min.js"></script>
+<script>
+	$(document).ready(function(){
+		$(".btn").click(function(){
+			//$("li").css("background","gray");
+			//$("li:first").css("background","gray");
+			//$("li").first().css("background","gray");
+			//$("li:last").css("background","gray");
+			//$("li").last().css("background","gray");
+			//$("li:eq(2)").css("background","gray");
+			//$("li").eq(2).css("background","gray");
+			//$("li:odd").css("background","gray");
+			//$("li:even").css("background","gray");
+			//$("li:not(:eq(2))").css("background","gray");
+			//$("li:gt(2)").css("background","gray");
+			$("li:lt(2)").css("background","gray");
+
+		})
+	})
+	</script>
+</body>
+</html>

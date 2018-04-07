@@ -1,0 +1,57 @@
+<html>
+<head>
+	</head>
+	<body>
+		<!-- accordion -->
+		<h2>section 1</h2>
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			
+		</p>
+		<h2>section 2</h2>
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			
+		</p>
+		<h2>section 3</h2>
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			
+		</p>
+		<h2>section 4</h2>
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			
+		</p>
+		<style>
+		h2,p{
+			background:lightgray;
+			width:300px;
+			margin:0;
+		}
+		p{
+			background:gray;
+		}
+	</style>
+	<script src="jquery-3.3.1.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$("p").hide();
+			$("p").first().show();
+			$("h2").click(function(){
+				$("p").slideUp();
+				$(this).next().slideDown();
+			})
+
+		})
+	</script>
+</body>
+</html>

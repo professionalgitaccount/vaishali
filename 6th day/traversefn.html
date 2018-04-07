@@ -1,0 +1,38 @@
+<html>
+<head>
+</head>
+<body>
+	<ul>
+		<li> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod </li>
+		<li> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod </li>
+		<li> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod </li>
+		<li> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod </li>
+		<li> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod </li>
+	</ul>
+	<style>
+	ul{
+		border:1px solid;
+	}
+	li{
+		border:1px solid green;
+	}
+</style>
+<script src="jquery-3.3.1.min.js"></script>
+<script>
+	$(document).ready(function(){
+		$("li").click(function(){
+			//$(this).css("background","lightpink")
+			//$(this).next().css("background","lightpink")
+			//$(this).nextAll().css("background","lightpink")
+			//$(this).prevAll().css("background","lightpink")
+			//$(this).prev().css("background","lightpink")
+			//$(this).siblings().css("background","lightpink")
+			//$(this).parent().css("border","2px solid green");
+			$(this).parent().children("li:eq(2)").css("background","lightpink")
+
+
+		})
+	})
+	</script>
+</body>
+</html>

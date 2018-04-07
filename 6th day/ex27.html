@@ -1,0 +1,18 @@
+<input type="text" id="txt" placeholder="12-2-2000">
+<input type="button" value="Check" onclick="check_value()">
+<p id="msg">hello</p>
+
+<script>
+function check_value(){
+	// akshay.patil
+	// akshay.patil_123
+	// 007akshay.patil
+
+	reg_exp = /^([a-z0-9][a-z0-9_\.]{1,}[a-z0-9])@([a-z0-9][a-z0-9\-]{1,}[a-z0-9])\.([a-z]{2,})(\.[a-z]{2,})?$/;
+	data = document.querySelector("#txt").value;
+	// console.log(result);
+	document.querySelector("#msg").innerHTML = (reg_exp.test(data))?"valid":"Invalid";
+	// document.querySelector("#txt").value = result;
+}
+</script>	
+	

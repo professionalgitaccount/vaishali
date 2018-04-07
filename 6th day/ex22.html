@@ -1,0 +1,19 @@
+<input type="text" id="txt" placeholder="Akshay Patil">
+<input type="button" value="Check" onclick="check_value()">
+<p id="msg">hello</p>
+
+<script>
+function check_value(){
+	rec= document.querySelector("#txt").value;
+	// console.log(rec);
+	reg_exp = /^[a-zA-Z][a-zA-Z' ]{1,}[a-zA-Z]$/;
+	if(reg_exp.test(rec) == true){
+		msg = "Valid";	
+	}
+	else{
+		msg = "Invalid";
+	}
+	document.querySelector("#msg").innerHTML = msg;
+}
+</script>	
+	
