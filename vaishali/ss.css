@@ -1,0 +1,15 @@
+
+.logo{border-bottom:1px solid #fafafa ;padding: 15px 0;margin-bottom:15px}
+.logo .col-md-3{/*border:1px solid;*/padding-top: 20px }
+
+.login_links{list-style:none;overflow: auto;margin-top: 5px;float:left;}
+.login_links li{float:left;}
+.login_links li a{border:1px solid #fcfcfc;display: block;padding: 10px 10px;font-size: 14px;
+color:#666666;text-decoration: none;text-transform: capitalize;margin:0 5px;}
+.login_links li a:hover{background: #f8f8f8}
+.stop{background:#000;font-size:20px;color:#fff;margin-top:0px;text-align: center}
+.new{background:#000;font-size:20px;color:#fff;text-align:center;}
+.banner{padding:0px;margin-right:0px;}
+.new1{background:#000;font-size:20px;color:#fff;margin-top:20px;text-align:center;}
+.new2{background:#fff;font-size:15px;color:#000;text-align:center;margin-top:30px;}
+.new3{margin-top:10px;}.col-md-3 p{margin:10px 0px;}
