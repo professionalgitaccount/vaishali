@@ -1,0 +1,21 @@
+<button onclick="test_record()">Enter</button>
+<p id="para">hello</p>
+
+<script type="text/javascript">
+	test_record=function(){
+	// setTimeout(function(){
+	// 	rec=new Date();
+	// 	document.getElementById("para").innerHTML=rec.getFullYear()+"-"+rec.getMonth()+"-"+rec.getDate()+""+rec.getHours()+":"+rec.getMinutes()+":"+rec.getSeconds()
+	// },3000)
+
+
+	setInterval(function(){
+		rec=new Date();
+		document.getElementById("para").innerHTML=rec.getFullYear()+"-"+rec.getMonth()+"-"+rec.getDate()+""+rec.getHours()+":"+rec.getMinutes()+":"+rec.getSeconds()
+	},1000)
+
+
+	}
+
+
+</script>
