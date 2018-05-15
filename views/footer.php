@@ -158,11 +158,19 @@
 	
 
   
-    <script src="..assets/js/jquery.js"></script>
-	<script src="..assets/js/bootstrap.min.js"></script>
-	<script src="..assets/js/jquery.scrollUp.min.js"></script>
-	<script src="..assets/js/price-range.js"></script>
-    <script src="..assets/js/jquery.prettyPhoto.js"></script>
-    <script src="..assets/js/main.js"></script>
+    <script src="../assets/js/jquery.js"></script>
+	<script src="../assets/js/bootstrap.min.js"></script>
+	<script src="../assets/js/jquery.scrollUp.min.js"></script>
+	<script src="../assets/js/price-range.js"></script>
+    <script src="../assets/js/jquery.prettyPhoto.js"></script>
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/eshopper_project.js"></script>
+    <?php
+    if(isset($_SESSION['project_name'])):
+    ?>
+    <script src="../assets/js/eshopper_project_after_login.js"></script>
+    <?php
+    endif;
+    ?>
 </body>
 </html>

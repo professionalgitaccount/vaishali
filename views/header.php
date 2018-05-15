@@ -118,13 +118,26 @@
 								<li><a href="index.html" class="active">Home</a></li>
 								<li class="dropdown"><a href="#">UserPlane<i class="fa fa-angle-down"></i></a>
                                     <ul role="menu" class="sub-menu">
-           <li><a href="login.php">Login </a></li>
-		<li><a href="shop.html">add category</a></li> 
-	<li><a href="shop.html">add brand</a></li> 
-	<li><a href="shop.html">add products</a></li> 
+ <?php
+ if(!isset($_SESSION['project_name'])):
 
-<li><a href="shop.html">change password</a></li> 
-<li><a href="shop.html">Logout</a></li> 
+ ?>                                   	
+           <li><a href="login.php">Login </a></li>
+           <?php
+       endif;
+       ?>
+       <?php
+       if(isset($_SESSION['project_name'])):
+       ?>
+		<li><a href="add-category.php">add category</a></li> 
+	<li><a href="add-brand.php">add brand</a></li> 
+	<li><a href="add-product.php">add products</a></li> 
+
+<li><a href="change-password.php">change password</a></li> 
+<li><a href="logout.php">Logout <?php echo $_SESSION['project_name'];?></a></li>
+<?php
+endif;
+?> 
                                     </ul>
                                 </li> 
 								<li class="dropdown"><a href="#">Blog<i class="fa fa-angle-down"></i></a>
