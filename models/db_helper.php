@@ -10,6 +10,12 @@
  		//echo $sql;
  		return $this->conn->query($sql)or die($this->conn->error);
  	}
+
+ 	function update($table,$records,$condition){
+ 		$sql="update $table set $records where $condition";
+ 		echo $sql;
+ 		return  $this->conn->query($sql)or die($this->conn->error);
+ 	}
  	function select($col,$table,$condition){
  		//echo "SELECT CALL";
  		$sql = "select $col from $table where $condition";
@@ -38,7 +44,7 @@
  		}
 
  	
-    function update(){}
+    
     function delete(){}
 }
  
