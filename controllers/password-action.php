@@ -43,10 +43,44 @@ else{
 
 
 }
-
-
-
-
-
-
 ?>
+
+<?php
+$to ="singhvaishali7263816275@gmail.com";
+
+$subject="TEST MAIL FROM CODE";
+$txt="Hello world!";
+$headers="From:<vishal@php-trainig.in>";
+
+$result=mail($to,$subject,$txt,$headers);
+var_dump($result);
+?>
+
+<?php
+$username="singhvaishali7263816275@gmail.com";
+$hash="1ec2cef68475de7e3cbbcecfc2039a945bed7e3eba6078134c7a3bd98939f919";
+$test="0";
+$sender="TXTLCL";
+$numbers="72638116275";
+$message=urlencode("hello 123 test from php code");
+$url="http://api.textlocal.in/send/?username=$username$hash=$hash&message=$message&sender=$sender$numbers=$numbers$test=$test";
+echo $url;
+//file(pass url)execution process
+//$result=file($url);
+//var_dump($result);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
